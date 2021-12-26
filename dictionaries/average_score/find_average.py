@@ -6,15 +6,15 @@ if __name__ == '__main__':
     
     Further details are provided in the info.pdf file provided within this directory.
     """
-    n = int(input())
+    n = int (input ())
     student_marks = {}
-    for _ in range(n):
-        name, *line = input().split()
-        scores = list(map(float, line))
+    for _ in range (n):
+        name, *line = input ().split ()
+        scores = list (map (float, line))
         student_marks[name] = scores
-    query_name = input()
+    query_name = input ()
 
     query = student_marks[query_name]
-    average = sum(query) / len(query)
+    average = sum (query) / len (query)
     # Display average with 2 decimal precision
-    print('{:.2f}'.format(average))
+    print ('{:.2f}'.format (average))
