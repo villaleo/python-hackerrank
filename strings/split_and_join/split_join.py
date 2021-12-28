@@ -1,3 +1,9 @@
+def split_and_join (line: str) -> str:
+    to_list = line.split ()
+    add_hyphen = "-".join (to_list)
+    return add_hyphen
+
+
 """
 You are given a string. Split the string on a " " (space) delimiter and join using a - hyphen.
 
@@ -10,14 +16,6 @@ Returns:
 
 Further details are provided in the info.pdf file provided within this directory.
 """
-
-
-def split_and_join (line: str) -> str:
-    to_list = line.split ()
-    add_hyphen = "-".join (to_list)
-    return add_hyphen
-
-
 if __name__ == '__main__':
     line = input ()
     result = split_and_join (line)
